@@ -1,0 +1,28 @@
+{
+  "keywords": ["Darabszám", "Cikkszám", "Megnevezés"],
+  "template": "SAJATKESZLET_template.xlsx",
+
+  "item_start_regex": "^(\\d{1,3})\\s+([0-9A-Za-z\\- ]+)",
+  
+  "fields": [
+    { 
+      "name": "Cikkszám",
+      "regex": "^\\d{1,3}\\s+([0-9A-Za-z\\-]+)",
+      "group": 1
+    },
+    {
+      "name": "Mennyiség",
+      "regex": "(\\d+)\\s+darab",
+      "group": 1,
+      "type": "int"
+    }
+  ],
+
+  "use_lookup": true,
+
+  "lookup_key_column": "SAP-Cikkszám",
+  "lookup_value_column": "Megnevezés",
+
+  "lookup_source_field": "Cikkszám",
+  "lookup_target_field": "Megnevezés"
+}

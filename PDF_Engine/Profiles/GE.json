@@ -1,0 +1,15 @@
+{
+  "keywords": ["Item:", "Net Unit Price"],
+  "template": "GE_template.xlsx",
+  "item_start_regex": "Item:\\s*([0-9A-Za-z\\-]+)",
+  "fields": [
+    { "name": "GE cikkszám", "from": "item_group", "group": 1 },
+    { "name": "Mennyiség", "regex": "EACH\\s+(\\d+)", "group": 1, "type": "int" },
+    { "name": "Nettó egységár", "regex": "EACH\\s+\\d+\\s+((?:\\d+(?:[.,]\\d+)?|[.,]\\d+))", "group": 1, "type": "float" }
+  ],
+  "use_lookup": true,
+  "lookup_key_column": "GE cikkszám",
+  "lookup_value_column": "RECA cikkszám",
+  "lookup_source_field": "GE cikkszám",
+  "lookup_target_field": "RECA cikkszám"
+}
