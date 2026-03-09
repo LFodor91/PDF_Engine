@@ -18,9 +18,9 @@ A motor jelenleg három különböző PDF struktúrát kezel.
 
 ---
 
-## 1. EK lista (RECA)
+## 1. EK lista
 
-RECA rendelési PDF-ek feldolgozása.
+Rendelési PDF-ek feldolgozása.
 
 Kinyert adatok:
 
