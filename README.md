@@ -250,9 +250,3 @@ A projekt Python könyvtárakat használ:
 - Excel kompatibilis környezet
 - Python embeddable package (portable)
 
----
-
-# Fejlesztő
-
-PDF Engine – Python alapú automatizált PDF feldolgozó rendszer.
-
